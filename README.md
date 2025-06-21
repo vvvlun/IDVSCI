@@ -112,7 +112,7 @@ The whole project is based on the [VIRSCI](https://github.com/RenqiChen/Virtual-
 
 The multi-agent framework in this work is based on the [AgentScope](https://github.com/modelscope/agentscope).
 
-The raw data is based on the [AMiner Computer Science Dataset](https://www.aminer.cn/aminernetwork).
+Computer Sciences raw data is based on the [AMiner Computer Science Dataset](https://www.aminer.cn/aminernetwork).
 
 ## ⚖ License
 
