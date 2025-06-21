@@ -47,7 +47,7 @@ After preprocessing, the used data is publicly available at [Google Drive](https
 
 #### Health Sciences Dataset
 
-The Health Sciences raw data is extracted from [Pubmed](https://pubmed.ncbi.nlm.nih.gov/) a database maintained by the [NCBI](https://www.ncbi.nlm.nih.gov/books/NBK25501/). 
+The raw data in Health Sciences was extracted from [Pubmed](https://pubmed.ncbi.nlm.nih.gov/), a database maintained by the [NCBI](https://www.ncbi.nlm.nih.gov/books/NBK25501/). 
 
 After preprocessing, the used data is publicly available at [Google Drive](https://drive.google.com/file/d/1AedrqqaGgml7ExGGWBGmST413JSZ3jzF/view?usp=drive_link).
 
