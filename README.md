@@ -1,37 +1,20 @@
 # IDVSCI
 <p align="center">
-  <img src='logo.png' width=800>
+  <img src='Framework.png' width=800>
 </p>
 
 
-# Two Heads Are Better Than One: A Multi-Agent System Has the Potential to Improve Scientific Idea Generation.
+# Dynamic Knowledge Exchange and Dual-diversity Review: Concisely Unleashing the Potential of a Multi-Agent Research Team.
 
 ## 👀 Introduction
 
-This repository contains the code for our paper `Two Heads Are Better Than One: A Multi-Agent System Has the Potential to Improve Scientific Idea Generation`. 
-
-- To the best of our knowledge, we propose the first multi-agent system for conducting scientific collaborations in an end-to-end pipeline from team organization to novel scientific idea generation. Furthermore, the real data is utilized for role-play and the objective evaluation of final outputs.
-
-- We conduct extensive evaluations to investigate VirSci in terms of the team settings and the novelty of generated scientific ideas. The results demonstrate that multi-agent collaboration can improve the quality of the outcomes, surpassing the SOTA single-agent method.
-
-- The simulation results align with the important findings in Science of Science, such as fresh teams tend to create more innovative research, showcasing the potential of VirSci as a powerful tool for future research in this field.
-
-Our project website is [Website](https://renqichen.github.io/Social_Science/).
-
-## 📆 Updates 
-
-### [2024-10]
-
-1. We propose the VirSci, a multi-agent system has the potential to improve scientific idea generation.
-2. Watch demo video for our project at <a href="https://www.youtube.com/watch?v=oMSEAeGfTIk" target="_blank">YouTube</a>.
-3. Full paper with Appendix is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv</a>.
-4. VirSci code and data are available for Research community.
+This repository contains the code for our paper `Dynamic Knowledge Exchange and Dual-diversity Review: Concisely Unleashing the Potential of a Multi-Agent Research Team`. 
 
 ## 💡 Run
 
 ### Environment
 
-We tested our codebase with PyTorch 2.3.1 and CUDA 12.1. Please install the corresponding versions of PyTorch and CUDA based on your computational resources.
+Tested the codebase with PyTorch 2.3.1 and CUDA 12.1. Please install the corresponding versions of PyTorch and CUDA based on your computational resources.
 
 To install the required packages, run:
 
@@ -50,7 +33,8 @@ pip install -e .
 
 ### Setup
 
-The raw data is based on the [AMiner Computer Science Dataset](https://www.aminer.cn/aminernetwork).
+#### Computer Sciences Dataset
+The Computer Sciences raw data is based on the [AMiner Computer Science Dataset](https://www.aminer.cn/aminernetwork).
 
 After preprocessing, the used data is publicly available at [Google Drive](https://drive.google.com/drive/folders/1ZwWMBQ5oK-l4VuzMa60GbMND0g2EIxIu?usp=sharing).
 
@@ -61,6 +45,14 @@ After preprocessing, the used data is publicly available at [Google Drive](https
 - Author knowledge bank is put in the `Authors/books.tar`, which is used in in `input_dir` of Line 13 in `sci_platform/configs/knowledge_config.json` and `author_info_dir` of Line 36 in `sci_platform/sci_platform.py`.
 
 - Adjacency matrix is put in the `adjacency.txt`, which is used in `adjacency_matrix_dir` of Line 37 in `sci_platform/sci_platform.py`.
+
+#### Health Sciences Dataset
+
+The Health Sciences raw data is extracted from [Pubmed](https://pubmed.ncbi.nlm.nih.gov/) a database maintained by the [NCBI](https://www.ncbi.nlm.nih.gov/books/NBK25501/). 
+
+After preprocessing, the used data is publicly available at [Google Drive](https://drive.google.com/file/d/1AedrqqaGgml7ExGGWBGmST413JSZ3jzF/view?usp=drive_link).
+
+- The usage of this dataset is similar to that of the Computer Sciences dataset mentioned above.
 
 #### Note
 
@@ -86,11 +78,11 @@ Here we explain the roles of several critial files.
 
 #### Ollama
 
-In our experiments, we use `ollama` to deploy the `llama3.1-8b` and `llama3.1-70b` model. The details of deployment could refer to [URL](https://github.com/modelscope/agentscope/blob/main/scripts/README.md#ollama).
+In our experiments, we use `ollama` to deploy the `llama3.1-8b`,`llama3.1-70b` and `QWQ` model. The details of deployment could refer to [URL](https://github.com/modelscope/agentscope/blob/main/scripts/README.md#ollama).
 
 #### Run
 
-After pull `llama3.1` model, open the ollama server and run our codes:
+After pull `llama3.1` and `QWQ` model, open the ollama server and run our codes:
 
 ```
 cd sci_platform/
@@ -117,25 +109,11 @@ Our code support different collaboration settings. The commonly used arguments:
 
 ## 🙏 Acknowledgements
 
-This project is supported by Shanghai Artificial Intelligence Laboratory.
+The whole project is based on the [VIRSCI](https://github.com/RenqiChen/Virtual-Scientists).
 
 The multi-agent framework in this work is based on the [AgentScope](https://github.com/modelscope/agentscope).
 
 The raw data is based on the [AMiner Computer Science Dataset](https://www.aminer.cn/aminernetwork).
-
-## 📧 Contact
-
-If you have any questions, please  contact at [chenrenqi@pjlab.org.cn, suhaoyang@pjlab.org.cn].
-
-Welcome to join our discussion group on collective intelligence technology!
-
-| Wechat                                         |
-| ---------------------------------------------- |
-| <img src="Group.jpg" width="200" height="200"> |
-
-### Note
-
-If you find that the WeChat QR code has expired, please send us an email with your WeChat ID, and we will manually invite you to the group.
 
 ## ⚖ License
 
