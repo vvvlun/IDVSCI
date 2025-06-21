@@ -1,4 +1,3 @@
-# IDVSCI
 <p align="center">
   <img src='Framework.png' width=800>
 </p>
