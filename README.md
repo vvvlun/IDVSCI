@@ -118,3 +118,5 @@ Computer Sciences raw data is based on the [AMiner Computer Science Dataset](htt
 
 This repository is licensed under the [Apache-2.0 License](LICENSE).
 
+## Credits
+The code of this repository partly relies on [VIRSCI](https://github.com/RenqiChen/Virtual-Scientists) and I would like to show my sincere gratitude to the authors behind these contributions.
