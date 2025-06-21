@@ -1,0 +1,240 @@
+Metadata-Version: 2.4
+Name: agentscope
+Version: 0.0.6a3
+Summary: AgentScope: A Flexible yet Robust Multi-Agent Platform.
+Home-page: https://github.com/modelscope/agentscope
+Download-URL: https://github.com/modelscope/agentscope/archive/v0.0.6alpha3.tar.gz
+Author: SysML team of Alibaba Tongyi Lab
+Author-email: gaodawei.gdw@alibaba-inc.com
+License: Apache License 2.0
+Keywords: deep-learning,multi agents,agents
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+Requires-Dist: black
+Requires-Dist: docstring_parser
+Requires-Dist: pydantic
+Requires-Dist: loguru==0.6.0
+Requires-Dist: tiktoken
+Requires-Dist: Pillow
+Requires-Dist: requests
+Requires-Dist: chardet
+Requires-Dist: inputimeout
+Requires-Dist: openai>=1.3.0
+Requires-Dist: numpy
+Requires-Dist: Flask==3.0.0
+Requires-Dist: Flask-Cors==4.0.0
+Requires-Dist: Flask-SocketIO==5.3.6
+Requires-Dist: flask_sqlalchemy
+Requires-Dist: flake8
+Requires-Dist: dashscope==1.14.1
+Requires-Dist: openai>=1.3.0
+Requires-Dist: ollama>=0.1.7
+Requires-Dist: google-generativeai>=0.4.0
+Requires-Dist: zhipuai
+Requires-Dist: litellm
+Requires-Dist: notebook
+Requires-Dist: nbclient
+Requires-Dist: nbformat
+Requires-Dist: psutil
+Requires-Dist: scipy
+Requires-Dist: pillow
+Provides-Extra: distribute
+Requires-Dist: networkx; extra == "distribute"
+Requires-Dist: black; extra == "distribute"
+Requires-Dist: docstring_parser; extra == "distribute"
+Requires-Dist: pydantic; extra == "distribute"
+Requires-Dist: loguru==0.6.0; extra == "distribute"
+Requires-Dist: tiktoken; extra == "distribute"
+Requires-Dist: Pillow; extra == "distribute"
+Requires-Dist: requests; extra == "distribute"
+Requires-Dist: chardet; extra == "distribute"
+Requires-Dist: inputimeout; extra == "distribute"
+Requires-Dist: openai>=1.3.0; extra == "distribute"
+Requires-Dist: numpy; extra == "distribute"
+Requires-Dist: Flask==3.0.0; extra == "distribute"
+Requires-Dist: Flask-Cors==4.0.0; extra == "distribute"
+Requires-Dist: Flask-SocketIO==5.3.6; extra == "distribute"
+Requires-Dist: flask_sqlalchemy; extra == "distribute"
+Requires-Dist: flake8; extra == "distribute"
+Requires-Dist: dashscope==1.14.1; extra == "distribute"
+Requires-Dist: openai>=1.3.0; extra == "distribute"
+Requires-Dist: ollama>=0.1.7; extra == "distribute"
+Requires-Dist: google-generativeai>=0.4.0; extra == "distribute"
+Requires-Dist: zhipuai; extra == "distribute"
+Requires-Dist: litellm; extra == "distribute"
+Requires-Dist: notebook; extra == "distribute"
+Requires-Dist: nbclient; extra == "distribute"
+Requires-Dist: nbformat; extra == "distribute"
+Requires-Dist: psutil; extra == "distribute"
+Requires-Dist: scipy; extra == "distribute"
+Requires-Dist: pillow; extra == "distribute"
+Requires-Dist: grpcio==1.60.0; extra == "distribute"
+Requires-Dist: grpcio-tools==1.60.0; extra == "distribute"
+Requires-Dist: protobuf==4.25.0; extra == "distribute"
+Requires-Dist: expiringdict; extra == "distribute"
+Requires-Dist: dill; extra == "distribute"
+Requires-Dist: psutil; extra == "distribute"
+Provides-Extra: dev
+Requires-Dist: networkx; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: docstring_parser; extra == "dev"
+Requires-Dist: pydantic; extra == "dev"
+Requires-Dist: loguru==0.6.0; extra == "dev"
+Requires-Dist: tiktoken; extra == "dev"
+Requires-Dist: Pillow; extra == "dev"
+Requires-Dist: requests; extra == "dev"
+Requires-Dist: chardet; extra == "dev"
+Requires-Dist: inputimeout; extra == "dev"
+Requires-Dist: openai>=1.3.0; extra == "dev"
+Requires-Dist: numpy; extra == "dev"
+Requires-Dist: Flask==3.0.0; extra == "dev"
+Requires-Dist: Flask-Cors==4.0.0; extra == "dev"
+Requires-Dist: Flask-SocketIO==5.3.6; extra == "dev"
+Requires-Dist: flask_sqlalchemy; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: dashscope==1.14.1; extra == "dev"
+Requires-Dist: openai>=1.3.0; extra == "dev"
+Requires-Dist: ollama>=0.1.7; extra == "dev"
+Requires-Dist: google-generativeai>=0.4.0; extra == "dev"
+Requires-Dist: zhipuai; extra == "dev"
+Requires-Dist: litellm; extra == "dev"
+Requires-Dist: notebook; extra == "dev"
+Requires-Dist: nbclient; extra == "dev"
+Requires-Dist: nbformat; extra == "dev"
+Requires-Dist: psutil; extra == "dev"
+Requires-Dist: scipy; extra == "dev"
+Requires-Dist: pillow; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Provides-Extra: full
+Requires-Dist: networkx; extra == "full"
+Requires-Dist: black; extra == "full"
+Requires-Dist: docstring_parser; extra == "full"
+Requires-Dist: pydantic; extra == "full"
+Requires-Dist: loguru==0.6.0; extra == "full"
+Requires-Dist: tiktoken; extra == "full"
+Requires-Dist: Pillow; extra == "full"
+Requires-Dist: requests; extra == "full"
+Requires-Dist: chardet; extra == "full"
+Requires-Dist: inputimeout; extra == "full"
+Requires-Dist: openai>=1.3.0; extra == "full"
+Requires-Dist: numpy; extra == "full"
+Requires-Dist: Flask==3.0.0; extra == "full"
+Requires-Dist: Flask-Cors==4.0.0; extra == "full"
+Requires-Dist: Flask-SocketIO==5.3.6; extra == "full"
+Requires-Dist: flask_sqlalchemy; extra == "full"
+Requires-Dist: flake8; extra == "full"
+Requires-Dist: dashscope==1.14.1; extra == "full"
+Requires-Dist: openai>=1.3.0; extra == "full"
+Requires-Dist: ollama>=0.1.7; extra == "full"
+Requires-Dist: google-generativeai>=0.4.0; extra == "full"
+Requires-Dist: zhipuai; extra == "full"
+Requires-Dist: litellm; extra == "full"
+Requires-Dist: notebook; extra == "full"
+Requires-Dist: nbclient; extra == "full"
+Requires-Dist: nbformat; extra == "full"
+Requires-Dist: psutil; extra == "full"
+Requires-Dist: scipy; extra == "full"
+Requires-Dist: pillow; extra == "full"
+Requires-Dist: grpcio==1.60.0; extra == "full"
+Requires-Dist: grpcio-tools==1.60.0; extra == "full"
+Requires-Dist: protobuf==4.25.0; extra == "full"
+Requires-Dist: expiringdict; extra == "full"
+Requires-Dist: dill; extra == "full"
+Requires-Dist: psutil; extra == "full"
+Requires-Dist: docker; extra == "full"
+Requires-Dist: pymongo; extra == "full"
+Requires-Dist: pymysql; extra == "full"
+Requires-Dist: bs4; extra == "full"
+Requires-Dist: beautifulsoup4; extra == "full"
+Requires-Dist: feedparser; extra == "full"
+Requires-Dist: sphinx; extra == "full"
+Requires-Dist: sphinx-autobuild; extra == "full"
+Requires-Dist: sphinx_rtd_theme; extra == "full"
+Requires-Dist: myst-parser; extra == "full"
+Requires-Dist: sphinxcontrib-mermaid; extra == "full"
+Requires-Dist: pytest; extra == "full"
+Requires-Dist: pytest-cov; extra == "full"
+Requires-Dist: pre-commit; extra == "full"
+Requires-Dist: gradio==4.19.1; extra == "full"
+Requires-Dist: modelscope_studio==0.0.5; extra == "full"
+Requires-Dist: llama-index==0.10.30; extra == "full"
+Provides-Extra: online
+Requires-Dist: networkx; extra == "online"
+Requires-Dist: black; extra == "online"
+Requires-Dist: docstring_parser; extra == "online"
+Requires-Dist: pydantic; extra == "online"
+Requires-Dist: loguru==0.6.0; extra == "online"
+Requires-Dist: tiktoken; extra == "online"
+Requires-Dist: Pillow; extra == "online"
+Requires-Dist: requests; extra == "online"
+Requires-Dist: chardet; extra == "online"
+Requires-Dist: inputimeout; extra == "online"
+Requires-Dist: openai>=1.3.0; extra == "online"
+Requires-Dist: numpy; extra == "online"
+Requires-Dist: Flask==3.0.0; extra == "online"
+Requires-Dist: Flask-Cors==4.0.0; extra == "online"
+Requires-Dist: Flask-SocketIO==5.3.6; extra == "online"
+Requires-Dist: flask_sqlalchemy; extra == "online"
+Requires-Dist: flake8; extra == "online"
+Requires-Dist: dashscope==1.14.1; extra == "online"
+Requires-Dist: openai>=1.3.0; extra == "online"
+Requires-Dist: ollama>=0.1.7; extra == "online"
+Requires-Dist: google-generativeai>=0.4.0; extra == "online"
+Requires-Dist: zhipuai; extra == "online"
+Requires-Dist: litellm; extra == "online"
+Requires-Dist: notebook; extra == "online"
+Requires-Dist: nbclient; extra == "online"
+Requires-Dist: nbformat; extra == "online"
+Requires-Dist: psutil; extra == "online"
+Requires-Dist: scipy; extra == "online"
+Requires-Dist: pillow; extra == "online"
+Requires-Dist: grpcio==1.60.0; extra == "online"
+Requires-Dist: grpcio-tools==1.60.0; extra == "online"
+Requires-Dist: protobuf==4.25.0; extra == "online"
+Requires-Dist: expiringdict; extra == "online"
+Requires-Dist: dill; extra == "online"
+Requires-Dist: psutil; extra == "online"
+Requires-Dist: docker; extra == "online"
+Requires-Dist: pymongo; extra == "online"
+Requires-Dist: pymysql; extra == "online"
+Requires-Dist: bs4; extra == "online"
+Requires-Dist: beautifulsoup4; extra == "online"
+Requires-Dist: feedparser; extra == "online"
+Requires-Dist: sphinx; extra == "online"
+Requires-Dist: sphinx-autobuild; extra == "online"
+Requires-Dist: sphinx_rtd_theme; extra == "online"
+Requires-Dist: myst-parser; extra == "online"
+Requires-Dist: sphinxcontrib-mermaid; extra == "online"
+Requires-Dist: pytest; extra == "online"
+Requires-Dist: pytest-cov; extra == "online"
+Requires-Dist: pre-commit; extra == "online"
+Requires-Dist: gradio==4.19.1; extra == "online"
+Requires-Dist: modelscope_studio==0.0.5; extra == "online"
+Requires-Dist: llama-index==0.10.30; extra == "online"
+Requires-Dist: oss2; extra == "online"
+Requires-Dist: flask_babel; extra == "online"
+Requires-Dist: babel==2.15.0; extra == "online"
+Requires-Dist: gunicorn; extra == "online"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+SysML team of Alibaba Tongyi Lab

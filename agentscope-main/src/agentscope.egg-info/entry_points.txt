@@ -1,0 +1,5 @@
+[console_scripts]
+as_gradio = agentscope.web.gradio.studio:run_app
+as_server = agentscope.server.launcher:as_server
+as_studio = agentscope.studio:init
+as_workflow = agentscope.web.workstation.workflow:main
