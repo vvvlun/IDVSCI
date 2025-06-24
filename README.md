@@ -7,7 +7,7 @@
 
 ## 👀 Introduction
 
-This repository contains the code for our paper `Dynamic Knowledge Exchange and Dual-diversity Review: Concisely Unleashing the Potential of a Multi-Agent Research Team`. 
+This repository contains the code for our paper `Dynamic Knowledge Exchange and Dual-diversity Review: Concisely Unleashing the Potential of a Multi-Agent Research Team`(https://arxiv.org/abs/2506.18348). 
 
 ## 💡 Run
 
