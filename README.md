@@ -79,6 +79,35 @@ Here we explain the roles of several critial files.
 
 In our experiments, we use `ollama` to deploy the `llama3.1-8b`,`llama3.1-70b` and `QWQ` model. The details of deployment could refer to [URL](https://github.com/modelscope/agentscope/blob/main/scripts/README.md#ollama).
 
+1. Ollama should be installed. The linux version:
+
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+2. Run ollama in the path where ollama is installed:
+
+```
+./ollama serve
+```
+
+3. Pull a model to use with the library:
+
+```
+./ollama pull llama3.1
+./ollama pull llama3.1:70b
+./ollama pull QWQ
+./ollama pull mxbai-embed-large
+```
+
+4. Install the ollama python library in your environment:
+
+```
+pip install ollama
+```
+
+5. Complete the installation and close the terminal.
+
 #### Run
 
 After pull `llama3.1` and `QWQ` model, open the ollama server and run our codes:
