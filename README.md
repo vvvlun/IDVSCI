@@ -59,7 +59,7 @@ Please replace all paths in `sci_platform/sci_platform.py` with your own setting
 
 ### Code
 
-Here we explain the roles of several critial files.
+Here we explain the roles of several critial files.1
 
 - `agentscope-main/src/agentscope/agents/sci_agent.py` defines the customized scientist agent in this project.
 
